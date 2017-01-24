@@ -22,8 +22,12 @@ Remove "console=ttyAMA0,115200" and "kgdboc=ttyAMA0,115200" configuration parame
 
 # Using Serial Port with Pi3
 
-Raspberry Pi3 has a complete different layout from the Pi2. 
+Raspberry Pi3 has a complete different layout from the Pi2. The default full capacity serial ports are used by system bluetooth service, and leaves us with an alternative on-board mini-UART.
 
 ## Using the mini-UART port for Pi3
 
+To use the mini-UART port, you need to change the port in your code to `/dev/ttyS0`
+
 ## Using the normal UART port for Pi3
+
+Though the alternative mini_UART port is made avaliable, it is limited in the rate of transmittion. To use the UART ports with full capcity, you need to disable bluetooth. 
