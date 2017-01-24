@@ -6,7 +6,9 @@ To do this, you will need to wire the UART TDX, RDX and ground pins on raspberry
 
 For more information, please read [this wiki](https://github.com/WilliamHuang-cn/2017FRCVisionTrial/wiki/Using-a-coprocessor-with-RoboRIO).
 
-# Disabling system serial port usage for Pi2
+# Using Serial Port with Pi2
+
+## Disabling system serial port usage for Pi2
 
 Open up a console on Raspberrypi and run the following code to disable the serial getty service:
 
@@ -18,6 +20,10 @@ Remove "console=ttyAMA0,115200" and "kgdboc=ttyAMA0,115200" configuration parame
 
 `sudo nano /boot/cmdline.txt`
 
-# Using the mini-UART port for Pi3
+# Using Serial Port with Pi3
 
-# Using the normal UART port for Pi3
+Raspberry Pi3 has a complete different layout from the Pi2. 
+
+## Using the mini-UART port for Pi3
+
+## Using the normal UART port for Pi3
